@@ -25,8 +25,7 @@ public class Program {
 			char resp = sc.next().charAt(0);
 			sc.nextLine();
 			
-			if(resp == 'n') {
-				
+						
 				System.out.print("Name: ");
 				String name = sc.nextLine();
 				System.out.printf("Hours: ");
@@ -34,18 +33,13 @@ public class Program {
 				System.out.printf("Valeu per Hour: ");
 				double valuePerHour = sc.nextDouble();
 				
+				if(resp == 'n') {
+					
 				Employee employee = new Employee(name, hours, valuePerHour);
 				list.add(employee);
 	
 			}
 			else {
-				
-				System.out.print("Name: ");
-				String name = sc.nextLine();
-				System.out.printf("Hours: ");
-				int hours = sc.nextInt();
-				System.out.printf("Valeu per Hour: ");
-				double valuePerHour = sc.nextDouble();
 				System.out.printf("Additional charge: ");
 				double additionalCharge = sc.nextDouble();
 				
